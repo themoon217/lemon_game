@@ -1,0 +1,95 @@
+body {
+    background-color: #A9A9A9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 20px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 390px;
+    height: 430px;
+    background-color: #ffffff; /* 白の背景色 */
+    padding: 20px; /* 余白の設定（任意） */
+    box-sizing: border-box; /* ボックスモデルを border-box に */
+}
+
+.title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.vertical-text {
+    writing-mode: vertical-rl; /* 縦書きにする */
+    color: #000000; /* テキストの色を設定*/ 
+    text-align: center;
+    white-space: nowrap;
+}
+
+.author-name {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.book-title {
+    font-size: 60px;
+}
+
+.title-text {
+    text-align: center;
+}
+
+.lemon-container {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows: repeat(3, auto);
+    justify-content: space-around;
+    align-content: space-around;
+    width: 100%;
+    height: 100%;
+    padding: 20px; /* コンテナの内側の余白 */
+    box-sizing: border-box;
+}
+
+.lemon {
+    width: 100px;
+    height: 100px;
+    background-image: url(./image/レモン2.svg); /* レモンのSVG画像のパスを指定 */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.different-lemon {
+    background-image: url(./image/レモン1.svg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.text-vertical {
+    writing-mode: vertical-rl; /* 縦書きにする */
+    text-align: center; /* 中央揃え */
+    width: 100%; /* 幅を100%に */
+    height: 100%; /* 高さを100%に */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 900;
+}
