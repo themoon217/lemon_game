@@ -7,11 +7,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="typing">
-        <div class="typing-box">
-            <div class="story">
-                えたいの知れない不吉な塊が私の心を始終おさえつけていた。
+    <div>
+        <label for="inputText">
+            <div id="game" class="questions typing text-container">
+                <span id="remained"></span>
+                <span id="entered" class="maeker"></span>
+            <input type="text" class="text" id="inputText" autofocus>
             </div>
+        </label>
+    </div>
+    <div>
+        <div id="message" class="message typing text-container hidden">
+            <button id="replayBtn" class="button perfume"></button>
         </div>
     </div>
     <div class="footer">
@@ -21,5 +28,6 @@
             </div>
         </a>
     </div>
+    <script src="typing.js"></script>
 </body>
 </html>
