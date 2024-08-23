@@ -6,21 +6,11 @@
     <title>序 - タイピング</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div>
-        <label for="inputText">
-            <div id="game" class="questions typing text-container">
-                <span id="remained"></span>
-                <span id="entered" class="maeker"></span>
-            <input type="text" class="text" id="inputText" autofocus>
-            </div>
-        </label>
-    </div>
-    <div>
-        <div id="message" class="message typing text-container hidden">
-            <button id="replayBtn" class="button perfume"></button>
-        </div>
-    </div>
+<body class="type">
+    <div class="message" id="message"></div>
+    <input type="text" id="input" placeholder="ローマ字で入力">
+    <div class="typing" id="word">ここにテキストが表示されます</div>
+
     <div class="footer">
         <a href="top.html">
             <div class="lemon different-lemon">
